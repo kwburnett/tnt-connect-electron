@@ -21,5 +21,5 @@ describe('AppComponent', () => {
 });
 
 class TranslateServiceStub {
-  setDefaultLang(lang: string): void {}
+  public setDefaultLang(lang: string): void {}
 }
