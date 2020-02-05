@@ -1,0 +1,55 @@
+@import '../assets/scss/colors';
+
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+	height: 100vh;
+	width: 100vw;
+}
+
+.navigation-buttons {
+  background-color: $dark-green;
+  width: $nav-width;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: 1px solid white;
+}
+
+.navigation-buttons--button {
+  background-color: $gray;
+  width: $nav-button-width;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+  cursor: default;
+
+  &:hover {
+    background-color: #e5f1fb;
+  }
+
+  i {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+  }
+}
+
+.navigation-buttons--button__last {
+  margin-bottom: auto;
+}
+
+.navigation-buttons--button__bottom {
+  margin-bottom: 10px;
+}
+
+.navigation-buttons--divider {
+  height: 0;
+  width: $nav-button-width;
+  border: 1px solid white;
+  margin-top: 10px;
+}
