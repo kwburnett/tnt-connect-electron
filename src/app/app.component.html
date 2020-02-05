@@ -1,9 +1,9 @@
 <nav class="navigation-buttons">
-	<div class="navigation-buttons--button" [class.active]="activeRoute === 'home'" (click)="navigate('home')">
+	<div class="navigation-buttons--button" [routerLink]="['/home']" [routerLinkActive]="'active'">
 		<i class="fas fa-user"></i>
 		Contacts
 	</div>
-	<div class="navigation-buttons--button" [class.active]="activeRoute === 'groups'" (click)="navigate('groups')">
+	<div class="navigation-buttons--button" [routerLink]="['/groups']" [routerLinkActive]="'active'">
 		<i class="fas fa-users"></i>
 		Groups
 	</div>

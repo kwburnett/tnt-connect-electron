@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { AppConfig } from '../environments/environment';
-import { ElectronService } from './core/services';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { ElectronService } from './core/services';
 
 @Component({
 	selector: 'app-root',
@@ -28,12 +27,5 @@ export class AppComponent {
 		} else {
 			console.log('Mode web');
 		}
-	}
-
-	public navigate(route: string): void {
-		if (this.activeRoute !== route) {
-			this.router.navigate([route]);
-		}
-		this.activeRoute = route;
 	}
 }
