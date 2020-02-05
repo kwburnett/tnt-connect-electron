@@ -1,9 +1,9 @@
 <nav class="navigation-buttons">
-	<div class="navigation-buttons--button">
+	<div class="navigation-buttons--button" [class.active]="activeRoute === 'home'" (click)="navigate('home')">
 		<i class="fas fa-user"></i>
 		Contacts
 	</div>
-	<div class="navigation-buttons--button">
+	<div class="navigation-buttons--button" [class.active]="activeRoute === 'groups'" (click)="navigate('groups')">
 		<i class="fas fa-users"></i>
 		Groups
 	</div>
