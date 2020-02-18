@@ -8,5 +8,5 @@ import { Component, OnInit } from '@angular/core';
 export class PageNotFoundComponent implements OnInit {
   constructor() {}
 
-  public ngOnInit() {}
+  public ngOnInit(): void {}
 }

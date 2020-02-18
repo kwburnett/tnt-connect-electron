@@ -19,7 +19,3 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 });
-
-class TranslateServiceStub {
-  public setDefaultLang(lang: string): void {}
-}

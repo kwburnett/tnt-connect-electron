@@ -15,8 +15,8 @@ export class ElectronService {
   public childProcess: typeof childProcess;
   public fs: typeof fs;
 
-  public get isElectron() {
-    return window && window.process && window.process.type;
+  public get isElectron(): boolean {
+    return !!(window && window.process && window.process.type);
   }
 
   constructor() {
